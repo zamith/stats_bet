@@ -1,0 +1,9 @@
+<h1>Listing leagues</h1>
+
+<% @leagues.each do |league| %>
+  <div class="league_holder">
+    <span class="league_check_box"><%= check_box_tag league, league %></span>
+    <span class="league_text"><%= league %></span>
+  </div>
+<% end %>
+
